@@ -1,0 +1,39 @@
+{
+  "name": "express-management-system",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "expense",
+    "tracker",
+    "management",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "description": "A web application for tracking expenses.",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-management-system": "file:",
+    "moment": "^2.30.1",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.x",
+    "nodemon": "^3.1.4",
+    "prettier": "^2.x"
+  }
+}
